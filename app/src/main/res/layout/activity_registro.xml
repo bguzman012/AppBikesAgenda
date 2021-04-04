@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <EditText
+        android:id="@+id/etCedula"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Cedula"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etNombre"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="164dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etCorreo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etApellido"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etNombre" />
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="279dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etApellido" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="284dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="108dp"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textWebEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/btnAgregarMascota"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etPassw"
+        android:layout_width="279dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etTelefono" />
+
+    <Button
+        android:id="@+id/btnAgregarMascota"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginBottom="24dp"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelarNuevaMascota"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:layout_marginBottom="24dp"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="153dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="92dp"
+        android:background="#F3F3F3"
+        android:text="Registro"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/etNombre"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
